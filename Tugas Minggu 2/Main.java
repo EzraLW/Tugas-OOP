@@ -28,9 +28,9 @@ public class Main {
         Hitung Nilai = new Hitung();
         double nilaiAkhir = Nilai.nilaiAkhir(nialiTubes, nilaiQuiz, nilaiTugas, nilaiUTS, nilaiUAS);
         
-        System.out.println("\nNama : " + nama);
-        System.out.println("NIM : " + nim);
-        System.out.println("Nilai  Matakuliah Pemograman Berorientasi Objek :" + nilaiAkhir);
+        System.out.println("Nama: " + nama);
+        System.out.println("NIM: " + nim);
+        System.out.println("Nilai Matakuliah Pemograman Berorientasi Objek :" + nilaiAkhir);
 
         scanner.close();
     }   
