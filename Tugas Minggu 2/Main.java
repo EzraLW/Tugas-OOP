@@ -1,42 +1,37 @@
 import java.util.Scanner;
 
-public class Nilaimhsw {
+public class Main {
     public static void main(String[] args){
-        // membuat objek input untuk user 
-        Scanner input = new Scanner(System.in);
-        // meminta memasukkan nama dan NIM
+        
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Masukkan Nama: ");
-        String nama= input.nextLine();
+        String nama= scanner.nextLine();
 
         System.out.print("Masukkan NIM: ");
-        Integer nim = input.nextInt();
-
-        // meminta memasukkan nilai - nilai 
+        Integer nim = scanner.nextInt();
+ 
         System.out.print("Masukkan Nilai Tubes: ");
-        double nialiTubes = input.nextDouble();
+        double nialiTubes = scanner.nextDouble();
 
         System.out.print("Masukkan Nilai Quiz: ");
-        double nilaiQuiz  = input.nextDouble();
+        double nilaiQuiz  = scanner.nextDouble();
 
         System.out.print("Masukkan Nilai Tugas: ");
-        double nilaiTugas = input.nextDouble();
+        double nilaiTugas = scanner.nextDouble();
 
         System.out.print("Masukkan Nilai UTS: ");
-        double nilaiUTS = input.nextDouble();
+        double nilaiUTS = scanner.nextDouble();
 
         System.out.print("Masukkan Nilai UAS: ");
-        double nilaiUAS = input.nextDouble();
+        double nilaiUAS = scanner.nextDouble();
 
-        // menghitung nilai akhir
-        Nilai Nilai = new Nilai();
+        Hitung Nilai = new Hitung();
         double nilaiAkhir = Nilai.nilaiAkhir(nialiTubes, nilaiQuiz, nilaiTugas, nilaiUTS, nilaiUAS);
         
-        // menampilkan nama, nim dan nilai akhir
         System.out.println("\nNama : " + nama);
         System.out.println("NIM : " + nim);
         System.out.println("Nilai  Matakuliah Pemograman Berorientasi Objek :" + nilaiAkhir);
 
-        // menutup scanner
-        input.close();
+        scanner.close();
     }   
 }
